@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Star Bakery | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <img src="media/bakery-logo.png" alt="North Star Bakery logo" width="150">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <section>
+      <h2>Location and Hours</h2>
+      <p>212 Maple Street, open Tuesday through Sunday, 7:00 AM to 4:00 PM.</p>
+    </section>
+
+    <section>
+      <h2>Pre-Order and Inquiry Form</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Your Information</legend>
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Request Details</legend>
+
+          <label for="pickup-date">Pickup Date</label>
+          <input type="date" id="pickup-date" name="pickup-date">
+
+          <label for="request-type">Request Type</label>
+          <select id="request-type" name="request-type" required>
+            <option value="">Select one</option>
+            <option value="pre-order">Pre-Order</option>
+            <option value="general-question">General Question</option>
+          </select>
+
+          <label for="item-details">Item Details</label>
+          <textarea id="item-details" name="item-details" rows="4"></textarea>
+
+          <label for="allergy-notes">Allergy Notes (if applicable)</label>
+          <textarea id="allergy-notes" name="allergy-notes" rows="3"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>North Star Bakery &mdash; 212 Maple Street &mdash; (555) 013-9284</p>
+  </footer>
+</body>
+</html>
