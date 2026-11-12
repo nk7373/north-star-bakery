@@ -110,5 +110,11 @@ footer {
   .media-row img,
   .media-row picture {
     flex: 0 0 40%;
+    min-width: 0;
+  }
+
+  .media-row p {
+    flex: 1;
+    min-width: 0;
   }
 }
