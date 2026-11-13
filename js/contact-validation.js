@@ -14,6 +14,10 @@ const VALIDATION_RULES = {
     minLength: 5,
     errorEmpty: "Let us know what you'd like to order or ask about.",
     errorMinLength: "Please add a few more details (at least 5 characters)."
+  },
+  "request-type": {
+    required: true,
+    errorEmpty: "Please choose a request type."
   }
 };
 

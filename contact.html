@@ -51,11 +51,12 @@
           <input type="date" id="pickup-date" name="pickup-date">
 
           <label for="request-type">Request Type</label>
-          <select id="request-type" name="request-type" required>
+          <select id="request-type" name="request-type">
             <option value="">Select one</option>
             <option value="pre-order">Pre-Order</option>
             <option value="general-question">General Question</option>
           </select>
+          <span class="error-message" id="request-type-error"></span>
 
           <label for="item-details">Item Details</label>
           <textarea id="item-details" name="item-details" rows="4"></textarea>
