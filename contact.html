@@ -31,15 +31,17 @@
 
     <section>
       <h2>Pre-Order and Inquiry Form</h2>
-      <form action="#" method="post">
+      <form action="#" method="post" id="contact-form" novalidate>
         <fieldset>
           <legend>Your Information</legend>
 
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
+          <input type="text" id="name" name="name">
+          <span class="error-message" id="name-error"></span>
 
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email">
+          <span class="error-message" id="email-error"></span>
         </fieldset>
 
         <fieldset>
@@ -57,12 +59,14 @@
 
           <label for="item-details">Item Details</label>
           <textarea id="item-details" name="item-details" rows="4"></textarea>
+          <span class="error-message" id="item-details-error"></span>
 
           <label for="allergy-notes">Allergy Notes (if applicable)</label>
           <textarea id="allergy-notes" name="allergy-notes" rows="3"></textarea>
         </fieldset>
 
         <button type="submit">Submit Request</button>
+        <p id="form-success" hidden>Thanks! Your request looks good. (This demo form doesn't actually send anywhere yet.)</p>
       </form>
     </section>
   </main>
@@ -70,5 +74,7 @@
   <footer>
     <p>North Star Bakery &mdash; 212 Maple Street &mdash; (555) 013-9284</p>
   </footer>
+
+  <script src="js/contact-validation.js"></script>
 </body>
 </html>

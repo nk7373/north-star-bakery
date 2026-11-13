@@ -82,6 +82,25 @@ button {
   padding: 0.5rem 1rem;
 }
 
+.error-message {
+  display: block;
+  color: #B3261E;
+  font-size: 0.9rem;
+}
+
+#form-success {
+  color: #3B6B3B;
+  font-weight: bold;
+}
+
+.favorite-btn {
+  margin-top: 0.5rem;
+}
+
+#favorites-list {
+  padding-left: 1.2rem;
+}
+
 footer {
   text-align: center;
   background-color: #6B4226;
